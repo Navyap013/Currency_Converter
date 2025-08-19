@@ -27,7 +27,7 @@ for (let select of dropdowns) {
   });
 }
 
-// ✅ CORRECTED: Full URL includes both from & to
+
 const updateExchangeRate = async () => {
   let amount = document.querySelector(".amount input");
   let amtVal = amount.value;
@@ -72,5 +72,6 @@ btn.addEventListener("click", (evt) => {
 window.addEventListener("load", () => {
   updateExchangeRate();
 });
+
 
 
