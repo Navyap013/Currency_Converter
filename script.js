@@ -45,24 +45,7 @@
 //     let finalAmount = amtVal * rate;
 //     msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount.toFixed(2)} ${toCurr.value}`;
 //   } catch (err) {
-//     msg.innerText = "Failed to fetch exchange rate.";
-//     console.error("Exchange rate error:", err);
-//   }
-// };
-
-
-// const updateFlag = (element) => {
-//   let currCode = element.value;
-//   let countryCode = countryList[currCode];
-//   let newSrc = `https://flagsapi.com/${countryCode}/flat/64.png`;
-//   let img = element.parentElement.querySelector("img");
-//   img.src = newSrc;
-// };
-
-// btn.addEventListener("click", (evt) => {
-//   evt.preventDefault();
-//   updateExchangeRate();
-// });
+//  
 
 const BASE_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1.0.0/latest/currencies";
 
@@ -138,3 +121,4 @@ btn.addEventListener("click", (evt) => {
 window.addEventListener("load", () => {
   updateExchangeRate();
 });
+
